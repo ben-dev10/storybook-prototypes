@@ -20,7 +20,7 @@ const buttonStyles = cva(
       size: {
         sm: "px-4 py-2 text-sm",
         md: "px-4 py-2 text-base",
-        lg: "px-6 py-6 text-lg",
+        lg: "px-6 py-3 text-lg",
       },
       colorScheme: {
         primary: "text-white",
@@ -53,8 +53,6 @@ const buttonStyles = cva(
 );
 
 type ButtonProps = ComponentProps<"button"> & VariantProps<typeof buttonStyles>;
-
-// const defaultStyles = "text-white bg-blue-700 text-[13px] px-4 p-[9px] rounded-md hover:bg-blue-600";
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, size, colorScheme, className, ...props }, ref) => {
