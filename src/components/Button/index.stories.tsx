@@ -10,7 +10,6 @@ const meta: Meta<typeof Button> = {
   tags: ["autodocs"],
 };
 
-export default meta;
 
 type Story = StoryObj<typeof meta>;
 
@@ -41,3 +40,6 @@ export const Sizes: Story = {
     children: "Button",
   },
 };
+
+
+export default meta;
