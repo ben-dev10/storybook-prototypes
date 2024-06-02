@@ -1,3 +1,4 @@
+@import url(./utils/styles/shadcn-plugin.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +10,7 @@
   font-weight: 400;
 }
 
-@layer base {
+/* @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
@@ -86,4 +87,8 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+}  */
+
+@layer components {
+  .test {@apply !text-red-200}
 }

@@ -3,7 +3,7 @@ import { Stack } from ".";
 import { Box } from "..";
 
 const meta: Meta<typeof Stack> = {
-  title: "Layout/Stack",
+  title: "Archive/Layout/Stack",
   component: Stack,
   parameters: {
     layout: "centered",

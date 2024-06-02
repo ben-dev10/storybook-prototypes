@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./tab";
 import "./tabs.css";
 

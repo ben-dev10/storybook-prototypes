@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { TabsUI } from ".";
 
 const meta: Meta<typeof TabsUI> = {
-  title: "Components/Tabs",
+  title: "NovelUI/Components/Tabs",
   component: TabsUI,
   parameters: {
     layout: "centered",
