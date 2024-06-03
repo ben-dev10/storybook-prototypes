@@ -12,7 +12,7 @@ const meta: Meta<typeof GridAndDots> = {
 
 type Story = StoryObj<typeof meta>;
 
-export const GridOrDot: Story = {
+export const GridsAndDots: Story = {
   args: {
     type: "grid",
   },

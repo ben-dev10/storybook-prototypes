@@ -2,6 +2,8 @@ import { Button } from "../../ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./tab";
 import "./tabs.css";
 
+// FIXME: fix shadcn plugin bug
+
 export function TabsUI() {
   return (
     <Tabs defaultValue="account" className="w-[400px] text-[13px]">

@@ -7,7 +7,7 @@ const meta: Meta<typeof TabsUI> = {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
+  // tags: ["autodocs"],
 };
 
 type Story = StoryObj<typeof meta>;

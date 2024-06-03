@@ -33,14 +33,14 @@ export function GridAndDots({ type }: GridDotProp) {
   }
   return (
     <div
-      className={`h-[20rem] bg-[#f8f8f8] w-full dark:bg-black relative flex items-center justify-center 
+      className={`h-[20rem] !bg-[#fff] w-full dark:bg-black relative flex items-center justify-center 
       ${variant} `}
       // dark:bg-grid-white/[0.2] bg-grid-black/[0.2] "
     >
       {/* Radial gradient for the container to give a faded look */}
       <div
         className="absolute pointer-events-none inset-0 flex items-center justify-center
-       dark:bg-black bg-[#f8f8f8] [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)]"
+       dark:bg-black !bg-[#fff] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"
       ></div>
       <p
         className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent 
