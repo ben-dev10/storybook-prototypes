@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { TabsUI } from ".";
+import { TooltipUI } from ".";
 
-const meta: Meta<typeof TabsUI> = {
-  title: "NovelUI/Components/Tabs",
-  component: TabsUI,
+const meta: Meta<typeof TooltipUI> = {
+  title: "NovelUI/Components/Tooltips",
+  component: TooltipUI,
   parameters: {
     layout: "centered",
   },
@@ -12,6 +12,6 @@ const meta: Meta<typeof TabsUI> = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Tabs: Story = {};
+export const Tooltip: Story = {};
 
 export default meta;

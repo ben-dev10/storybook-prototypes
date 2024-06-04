@@ -1,5 +1,5 @@
 import { Button } from "../../ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./tab";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/NovelUI/ui/tab";
 import "./tabs.css";
 
 // FIXME: fix shadcn plugin bug

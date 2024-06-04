@@ -12,6 +12,10 @@ const meta: Meta<typeof TabsUI> = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Tabs: Story = {};
+export const Tabs: Story = {
+  args: {
+    type: "grid",
+  },
+};
 
 export default meta;
