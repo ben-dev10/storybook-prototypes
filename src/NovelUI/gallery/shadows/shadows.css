@@ -1,0 +1,103 @@
+:root {
+    /* Box shadow defaults (if nothing is defined on the container,  it'll use these)   */
+    --box-shadow-h: 215;
+    --box-shadow-s: 55%;
+    --box-shadow-l: 97%;
+}
+
+.container--light-yellow {
+    /* container background */
+    background: hsla(37, 74%, 82%, 1);
+
+    /* Use the containers background as the new box-shadow values */
+    --box-shadow-h: 37;
+    --box-shadow-s: 74%;
+    --box-shadow-l: 82%;
+}
+
+.container--fafafa {
+    /* container background */
+    background: hsla(0, 0%, 98%, 1);
+
+    /* Use the containers background as the new box-shadow values */
+    --box-shadow-h: 0;
+    --box-shadow-s: 0%;
+    --box-shadow-l: 98%;
+}
+
+.container--salt-air {
+    /* The containers background */
+    background: hsla(210, 42%, 93%, 1);
+
+    /* Use the containers background as the new box-shadow values */
+    --box-shadow-h: 210;
+    --box-shadow-s: 42%;
+    --box-shadow-l: 93%;
+}
+
+.container--dark-teal {
+    /* The containers background */
+    background: hsla(187, 19%, 46%, 1);
+
+    /* Use the containers background as the new box-shadow values */
+    --box-shadow-h: 187;
+    --box-shadow-s: 19%;
+    --box-shadow-l: 46%;
+}
+
+.container--black {
+    background: hsl(0, 0%, 15%);
+    --box-shadow-h: 0;
+    --box-shadow-s: 0%;
+    --box-shadow-l: 15%;
+}
+
+/* SHADOWS */
+
+/* The values for our light shadow */
+.sm-shadow {
+    box-shadow: 4px 4px 16px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            20%),
+        2px 2px 8px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            20%),
+        1px 1px 4px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            20%);
+}
+
+/* The values for our medium shadow */
+.md-shadow {
+    box-shadow: 8px 12px 32px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            30%),
+        4px 4px 16px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            30%),
+        2px 2px 8px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            30%);
+}
+
+/* The values for our heavy shadow */
+.lg-shadow {
+    box-shadow: 16px 16px 64px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            40%),
+        8px 8px 32px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            40%),
+        4px 4px 16px hsla(var(--box-shadow-h),
+            var(--box-shadow-s),
+            calc(var(--box-shadow-l) - 10%),
+            40%);
+}
