@@ -1,3 +1,6 @@
 pni @radix-ui/react-dialog @radix-ui/react-tooltip @radix-ui/react-form @radix-ui/react-switch @radix-ui/react-select @radix-ui/react-popover vaul @radix-ui/react-collapsible @radix-ui/react-accordion @radix-ui/react-dropdown-menu
 
 pni react-icons --save
+pni -D prettier-plugin-tailwindcss
+
+pni @storybook/theming @storybook/manager-api

@@ -15,24 +15,24 @@ export function TabsUI() {
           Password
         </TabsTrigger>
       </TabsList>
-      <div className="border-4 rounded-md mt-2 px-4 pt-1  pb-4 min-h-[170px]">
+      <div className="mt-2 min-h-[170px] rounded-md border-4 px-4 pb-4 pt-1">
         <TabsContent value="account" className="">
-          <h2 className="text-gray-950 font-bold text-xl">Account</h2>
+          <h2 className="text-xl font-bold text-gray-950">Account</h2>
           <p className="text-gray-500">
             Make changes to your account here. Click save when you're done.
           </p>
 
-          <button className="bg-black/90 text-white text-[12px] p-2 px-3 rounded-md mt-5">
+          <button className="mt-5 rounded-md bg-black/90 p-2 px-3 text-[12px] text-white">
             Save changes
           </button>
         </TabsContent>
         <TabsContent value="password">
-          <h2 className="text-gray-950 font-bold text-xl">Password</h2>
+          <h2 className="text-xl font-bold text-gray-950">Password</h2>
           <p className="text-gray-500">
             Make changes to your account here. Click save when you're done.
           </p>
           {/* shadcn button*/}
-          <Button variant={"default"} size={"sm"} className="text-[12px] mt-5">
+          <Button variant={"default"} size={"sm"} className="mt-5 text-[12px]">
             Save password
           </Button>
         </TabsContent>

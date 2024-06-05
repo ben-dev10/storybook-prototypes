@@ -1,8 +1,8 @@
-import { cn } from "../../../utils/cn";
+import { cn } from "../../../../utils/cn";
 import {
   PolymorphicComponentPropsWithRef,
   PolymorphicRef,
-} from "../../../utils/types";
+} from "../../../../utils/types";
 import { VariantProps, cva } from "class-variance-authority";
 import { forwardRef } from "react";
 

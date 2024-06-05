@@ -17,6 +17,7 @@
     "paths":{
       "@/*":["src/*"],
       "@/ui/*":["src/NovelUI/ui/*"],
+      "@/utils/*":["src/utils/*"],
     },
     /* Linting */
     "strict": true,

@@ -1,5 +1,5 @@
 import { Box, BoxProps } from "../Box";
-import { cn } from "../../../../utils/cn";
+import { cn } from "../../../../../utils/cn";
 
 type StackProps = BoxProps;
 
