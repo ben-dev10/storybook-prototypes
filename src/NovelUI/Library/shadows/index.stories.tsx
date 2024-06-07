@@ -4,7 +4,7 @@ import { ColorShadows } from ".";
 import { CSSShadows } from ".";
 
 const meta: Meta<typeof Shadows> = {
-  title: "NovelUI/Gallery/Shadows",
+  title: "NovelUI/Library/Shadows",
   component: Shadows,
   parameters: {
     layout: "centered",
