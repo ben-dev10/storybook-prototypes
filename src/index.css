@@ -10,3 +10,19 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+.tooltipText {
+  opacity: 0;
+}
+
+.iconGroup:hover+.tooltipText {
+  opacity: 1;
+}
+
+.iconGroup {
+  cursor: pointer;
+}
+
+.toolTipWrapper:has(.iconGroup:hover) .tooltipText {
+  opacity: 1;
+}

@@ -1,6 +1,4 @@
 function App() {
-  usePageVisibility();
-
   return (
     <>
       <div className="">
