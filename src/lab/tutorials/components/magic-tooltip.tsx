@@ -1,10 +1,6 @@
 import { useEffect, useRef } from "react";
 import { FaBehance, FaDollarSign, FaPaypal, FaStripeS } from "react-icons/fa6";
 
-export const Icon = () => {
-  return <div></div>;
-};
-
 export default function MagicTooltip() {
   const cardRef = useRef<HTMLDivElement | null>(null);
   const tooltipRef = useRef<HTMLParagraphElement | null>(null);
@@ -12,8 +8,8 @@ export default function MagicTooltip() {
   useEffect(() => {
     if (cardRef.current) {
       const logos = cardRef.current.querySelectorAll(".tooltipLogo");
-      console.log(logos);
 
+      // FIXME: solve calculations error
       logos.forEach((logo, index) => {
         logo.addEventListener("mouseenter", () => {
           const name = logo.getAttribute("id");
@@ -22,13 +18,12 @@ export default function MagicTooltip() {
           let newPosition =
             logo.getBoundingClientRect().left -
             logo.parentNode.getBoundingClientRect().left;
-          console.log(logo.parentNode.getBoundingClientRect().left);
 
           if (index === 0) {
             tooltipRef.current.style.transform = "translateX(0%)";
           } else if (index === logos.length - 1) {
             newPosition += logo.offsetWidth;
-            tooltipRef.current.style.transform = "translateX(-100%)";
+            tooltipRef.current.style.transform = "translateX(100%)";
           } else {
             newPosition += logo.offsetWidth / 2;
             tooltipRef.current.style.transform = "translateX(50%)";
@@ -36,7 +31,7 @@ export default function MagicTooltip() {
 
           tooltipRef.current.style.left = newPosition + "px";
 
-          const color = logo.getAttribute("tooltipLogo");
+          const color = logo.getAttribute("data-color");
           tooltipRef.current.style.backgroundColor = `color-mix(in srgb, ${color} 20%, white)`;
           tooltipRef.current.style.color = color;
         });
@@ -58,24 +53,28 @@ export default function MagicTooltip() {
       <div className="iconGroup flex gap-3">
         <div
           id="Stripe"
+          data-color="purple"
           className="tooltipLogo rounded-xl bg-purple-600 p-2 text-white"
         >
           <FaStripeS size={30} />
         </div>
         <div
           id="Paypal"
+          data-color="blue"
           className="tooltipLogo rounded-xl bg-blue-600 p-2 text-white"
         >
           <FaPaypal size={30} />
         </div>
         <div
           id="Money"
+          data-color="green"
           className="tooltipLogo rounded-xl bg-green-600 p-2 text-white"
         >
           <FaDollarSign size={30} />
         </div>
         <div
           id="Behance"
+          data-color="black"
           className="tooltipLogo rounded-xl bg-black p-2 text-white"
         >
           <FaBehance size={30} />
