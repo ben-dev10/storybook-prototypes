@@ -2,8 +2,16 @@
     --bg-primary: ;
     --bg-secondary: ;
 
+    --text-primary: ;
+    --text-secondary: ;
+
     --border-primary: ;
     --border-secondary: ;
+
+    --shadow-sm: ;
+    --shadow-md: ;
+    --shadow-lg: ;
+    --shadow-xl: ;
 }
 
 .light-mode {}

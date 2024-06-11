@@ -4,3 +4,5 @@ pni react-icons --save
 pni -D prettier-plugin-tailwindcss
 
 pni @storybook/theming @storybook/manager-api
+
+pnpm add -g pnpm

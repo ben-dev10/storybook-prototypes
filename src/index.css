@@ -26,3 +26,8 @@
 .toolTipWrapper:has(.iconGroup:hover) .tooltipText {
   opacity: 1;
 }
+
+.gradient-border {
+  border-image: linear-gradient(to right, red, blue);
+  border-image-slice: 1;
+}
