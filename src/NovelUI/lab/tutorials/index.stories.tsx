@@ -3,7 +3,7 @@ import MagicTooltip from "./components/magic-tooltip";
 import DynamicMetaTitle from "./components/dynamic-meta-title";
 
 const meta: Meta<typeof MagicTooltip> = {
-  title: "Lab/Lab",
+  title: "NovelUI/Lab/Tutorials",
   component: MagicTooltip,
   parameters: {
     layout: "centered",

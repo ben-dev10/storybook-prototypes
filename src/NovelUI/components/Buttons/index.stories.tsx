@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Buttons from ".";
 
 const meta: Meta<typeof Buttons> = {
-  title: "NovelUI/Library/Buttons",
+  title: "NovelUI/Components/Buttons",
   component: Buttons,
   parameters: {
     layout: "centered",
