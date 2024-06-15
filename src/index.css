@@ -1,5 +1,5 @@
 /* always have stylesheets imports come before tailwindcss base & utility imports */
-@import url(./utils/styles/shadcn-plugin.css);
+/* @import url(./utils/styles/shadcn-plugin.css); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,3 +31,4 @@
   border-image: linear-gradient(to right, red, blue);
   border-image-slice: 1;
 }
+

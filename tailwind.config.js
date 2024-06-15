@@ -1,8 +1,9 @@
 import "tailwindcss/defaultTheme";
 import svgToDataUri from "mini-svg-data-uri";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
-import { shadcnPlugin } from "./src/utils/lib/shadcn-ui-tw-plugin";
+import { novelUIPlugin } from "./src/utils/lib/novel-ui-tw-plugin";
 import { magicUIPlugin } from "./src/utils/lib/magic-ui-tw-plugin";
+// import { shadcnPlugin } from "./src/utils/lib/shadcn-ui-tw-plugin";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -15,12 +16,15 @@ export default {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {},
+    },
   },
 
   plugins: [
-    shadcnPlugin,
+    // shadcnPlugin,
     magicUIPlugin,
+    novelUIPlugin,
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(

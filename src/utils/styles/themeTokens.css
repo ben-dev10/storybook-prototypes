@@ -1,17 +1,57 @@
+/*
+*
+* Foreground: text
+* foreground-primary: text
+* foreground-secondary: headers
+*/
+
 :root {
-    --bg-primary: ;
-    --bg-secondary: ;
+    /* default: darkmode */
+    --background: 270 6% 7%;
+    --background-secondary: 270 6% 7%;
+    --foreground: 260 5% 62%;
+    --foreground-secondary: 220, 13%, 91%;
 
-    --text-primary: ;
-    --text-secondary: ;
+    /* --surface: ;
+    --surface-secondary: ;
+    
+    --primary: ;
+    --secondary: ;
+    */
+    --accent: 258 90% 66%;
+    --accent-foreground: 258 90% 66%;
 
-    --border-primary: ;
+    /* --border: ;
+    --border-secondary: ;
+    
+    --shadow-sm: ;
+    --shadow-md: ;
+    --shadow-lg: ;
+    --shadow-xl: ; */
+}
+
+/* light-class should be "light" */
+.light {
+    --background: 0 0% 98%;
+    --background-secondary: 270 6% 7%;
+    --foreground: 220 9% 46%;
+    --foreground-secondary: 224, 71%, 4%;
+
+    /* --surface: ;
+    --surface-secondary: ;
+
+    --primary: ;
+    --primary-foreground: ;
+    --secondary: ;
+    --secondary-foreground: ; */
+    --accent: 258 90% 66%;
+    --accent-foreground: 258 90% 66%;
+    /* 
+    --border: ;
     --border-secondary: ;
 
     --shadow-sm: ;
     --shadow-md: ;
     --shadow-lg: ;
-    --shadow-xl: ;
+    --shadow-xl: ; */
 }
-
-.light-mode {}
