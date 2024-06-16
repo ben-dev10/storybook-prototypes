@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-const Example = () => {
+const EncryptedButton = () => {
   return (
     <div className="grid min-h-[200px] place-content-center bg-neutral-900 p-4">
       <EncryptButton />
@@ -88,4 +88,4 @@ const EncryptButton = () => {
   );
 };
 
-export default Example;
+export default EncryptedButton;

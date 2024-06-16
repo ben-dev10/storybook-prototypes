@@ -6,13 +6,13 @@ export const novelUIPlugin = plugin(
   },
   {
     theme: {
-        container: {
-          center: true,
-          padding: "2rem",
-          screens: {
-            "2xl": "1400px",
-          },
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: {
+          "2xl": "1400px",
         },
+      },
       extend: {
         colors: {
           background: "hsl(var(--background))",
@@ -24,11 +24,10 @@ export const novelUIPlugin = plugin(
             DEFAULT: "hsl(var(--foreground))",
             secondary: "hsl(var(--foreground-secondary))",
           },
-
-          //   border: {
-          //     DEFAULT: "hsl(var(--border))",
-          //     foreground: "hsl(var(--border-secondary))",
-          //   },
+          border: {
+            DEFAULT: "hsl(var(--border))",
+            secondary: "hsl(var(--border-secondary))",
+          },
         },
         // borderRadius: {
         //   lg: `var(--radius)`,

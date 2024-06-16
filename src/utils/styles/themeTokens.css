@@ -21,8 +21,9 @@
     --accent: 258 90% 66%;
     --accent-foreground: 258 90% 66%;
 
-    /* --border: ;
+    --border: 217, 19%, 27%;
     --border-secondary: ;
+    /* 
     
     --shadow-sm: ;
     --shadow-md: ;
@@ -43,13 +44,15 @@
     --primary: ;
     --primary-foreground: ;
     --secondary: ;
-    --secondary-foreground: ; */
+    --secondary-foreground: ; 
+    */
+    
     --accent: 258 90% 66%;
     --accent-foreground: 258 90% 66%;
-    /* 
-    --border: ;
+    --border: 220, 13%, 91%;
     --border-secondary: ;
-
+    
+    /* 
     --shadow-sm: ;
     --shadow-md: ;
     --shadow-lg: ;
