@@ -1,9 +1,9 @@
-// import { Moon, Sun } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("portfolio-theme"));
+
   function handleToggleTheme() {
     const html = document.documentElement;
     const currentTheme = html.classList.contains("light") ? "light" : "dark";
@@ -16,7 +16,6 @@ export default function ThemeToggle() {
     html.classList.add(newTheme);
   }
 
-  // FIXME: fix theme state update
   return (
     <button
       onClick={handleToggleTheme}
@@ -24,11 +23,6 @@ export default function ThemeToggle() {
     >
       <AnimatePresence>
         {theme === "light" ? (
-          // <Sun
-          //   strokeWidth={2}
-          //   size={18}
-          //   className="rotate-0 transform transition-transform duration-500 dark:rotate-180"
-          // />
           <motion.svg
             key="sun-icon"
             initial={{ rotate: 180 }}
@@ -60,11 +54,6 @@ export default function ThemeToggle() {
             <path d="m17.657 17.657.707.707"></path>
           </motion.svg>
         ) : (
-          // <Moon
-          //   strokeWidth={2}
-          //   size={18}
-          //   className="rotate-0 transform transition-transform duration-500 dark:rotate-180"
-          // />
           <motion.svg
             key="moon-icon"
             initial={{ rotate: 180 }}
