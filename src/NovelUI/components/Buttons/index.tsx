@@ -62,6 +62,8 @@ import { SubtleSkeuomorphic15 } from "./buttons-gallery/SubtleSkeuomorphic15";
 import { SubtleSkeuomorphic16 } from "./buttons-gallery/SubtleSkeuomorphic16";
 import { SubtleSkeuomorphic17 } from "./buttons-gallery/SubtleSkeuomorphic17";
 
+import "./gradient-buttons.css";
+
 export const Button1 = () => {
   return (
     <div className="flex gap-3">
@@ -80,10 +82,29 @@ export const Button1 = () => {
   );
 };
 
+export const GradientButtons = () => {
+  return (
+    <div className="flex gap-5 text-[13px]">
+      <button
+        className="gradient-button-1 max-h-[50px] px-6 text-white"
+        role="button"
+      >
+        Gradient Button 1
+      </button>
+      <button className="gradient-button-2" role="button">
+        <span className="text text-[13px]">
+          Gradient Button 2
+        </span>
+      </button>
+    </div>
+  );
+};
+
 export default function Buttons() {
   return (
     <div className="space-y-7">
       <div className="black buttons flex flex-wrap gap-4">
+        <GradientButtons />
         <Button1 />
         <Black1 />
         <Black2 />
