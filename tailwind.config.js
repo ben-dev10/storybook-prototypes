@@ -18,6 +18,9 @@ export default {
   theme: {
     extend: {
       colors: {},
+      fontSize: {
+        "12px": "12px",
+      },
     },
   },
 

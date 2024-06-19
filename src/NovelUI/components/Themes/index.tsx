@@ -3,6 +3,8 @@ import useTheme from "@/utils/hooks/useTheme";
 import ThemeToggle from "./themeToggle";
 import "@/utils/styles/themeTokens.css";
 import EncryptedButton from "@/NovelUI/ui/hover.dev/encrypted-button";
+import clsx from "clsx";
+// import { twMerge } from "tailwind-merge";
 
 export const NavLinks = ({
   link,
@@ -24,13 +26,25 @@ export const NavLinks = ({
   );
 };
 
+export const Paragraph = ({
+  size,
+  color,
+  children,
+}: {
+  size: "12px" | "sm" | "md" | "lg" | "xl" | "2xl";
+  color: string;
+  children: React.ReactNode;
+}) => {
+  return <p className={clsx(`text-${color}-500 text-${size}`)}>{children}</p>;
+};
+
 export default function Theming() {
   /* call the useTheme hook */
   useTheme();
 
   return (
     <main className="max-w-xl rounded-[4px] bg-background p-6 text-gray-500">
-      <nav className="border-border border mb-4 ml-auto flex max-w-max items-center rounded-full p-1 pr-3 shadow">
+      <nav className="mb-4 ml-auto flex max-w-max items-center rounded-full border border-border p-1 pr-3 shadow">
         <ThemeToggle />
         <NavLinks link="#" text="Home" className="ml-2 text-accent" />
         <NavLinks link="#" text="Work" className="ml-2" />
@@ -49,10 +63,16 @@ export default function Theming() {
         <Text
           as="h2"
           size="h2"
-          className="text-foreground-secondary mb-3 opacity-90"
+          className="mb-3 text-foreground-secondary opacity-90"
         >
           Inbox
         </Text>
+
+        <Paragraph size="12px" color="red">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+          illo!
+        </Paragraph>
+
         <EncryptedButton />
       </section>
     </main>
