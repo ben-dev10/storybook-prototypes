@@ -63,6 +63,7 @@ import { SubtleSkeuomorphic16 } from "./buttons-gallery/SubtleSkeuomorphic16";
 import { SubtleSkeuomorphic17 } from "./buttons-gallery/SubtleSkeuomorphic17";
 
 import "./gradient-buttons.css";
+import { motion } from "framer-motion";
 
 export const Button1 = () => {
   return (
@@ -92,11 +93,42 @@ export const GradientButtons = () => {
         Gradient Button 1
       </button>
       <button className="gradient-button-2" role="button">
-        <span className="text text-[13px]">
-          Gradient Button 2
-        </span>
+        <span className="text text-[13px]">Gradient Button 2</span>
       </button>
     </div>
+  );
+};
+
+export const ShinyButton = () => {
+  return (
+    <section className="bg-neutral-800 p-40 text-[12px]">
+      <motion.button
+        initial={{ "--x": "100%", scale: 1 }}
+        animate={{ "--x": "-100%" }}
+        whileTap={{ scale: 0.97 }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 1,
+          type: "spring",
+          stiffness: 20,
+          damping: 15,
+          mass: 2,
+          scale: {
+            type: "spring",
+            stiffness: 10,
+            damping: 5,
+            mass: 0.1,
+          },
+        }}
+        className="radial-gradient relative rounded-md px-5 py-2"
+      >
+        <span className="linear-mask font-light tracking-wide text-neutral-100">
+          Contact Me
+        </span>
+        <span className="block absolute inset-0 rounded-md p-px linear-overlay"></span>
+      </motion.button>
+    </section>
   );
 };
 
