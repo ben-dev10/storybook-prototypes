@@ -121,12 +121,12 @@ export const ShinyButton = () => {
             mass: 0.1,
           },
         }}
-        className="radial-gradient relative rounded-md px-5 py-2"
+        className="radial-gradient relative rounded-lg px-6 py-3"
       >
         <span className="linear-mask font-light tracking-wide text-neutral-100">
           Contact Me
         </span>
-        <span className="block absolute inset-0 rounded-md p-px linear-overlay"></span>
+        <span className="linear-overlay absolute inset-0 block rounded-lg p-px"></span>
       </motion.button>
     </section>
   );

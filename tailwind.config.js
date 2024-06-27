@@ -17,6 +17,7 @@ export default {
   ],
   theme: {
     extend: {
+      screens: { mini: "324px" },
       colors: {},
       fontSize: {
         "12px": "12px",
