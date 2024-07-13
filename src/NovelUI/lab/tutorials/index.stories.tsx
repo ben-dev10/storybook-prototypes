@@ -3,6 +3,7 @@ import MagicTooltip from "./components/magic-tooltip";
 import DynamicMetaTitle from "./components/dynamic-meta-title";
 import VercelBento from "./components/vercel-bento";
 import TestBay from "./components/testbay";
+import CSSFilters from "./components/css-filters";
 
 const meta: Meta<typeof MagicTooltip> = {
   title: "NovelUI/Lab/Tutorials",
@@ -15,6 +16,9 @@ const meta: Meta<typeof MagicTooltip> = {
 
 type Story = StoryObj<typeof meta>;
 export const MagicTooltips: Story = {};
+export const CSSFilter: Story = {
+  render: () => <CSSFilters />,
+};
 export const DynamicTitle: Story = {
   render: () => <DynamicMetaTitle />,
 };

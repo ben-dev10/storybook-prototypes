@@ -8,3 +8,7 @@ pni @storybook/theming @storybook/manager-api
 pnpm add -g pnpm
 
 pni posthog-js --save
+
+pni @radix-ui/react-hover-card qss
+
+pnpm add -g pnpm
