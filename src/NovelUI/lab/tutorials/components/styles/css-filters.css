@@ -35,11 +35,11 @@
 }
 
 /* conditional filters */
-.image {
+.nardLogo {
     filter: grayscale(100%);
     transition: filter 0.3s;
 }
 
-.image:hover {
+.nardLogo:hover {
     filter: grayscale(0%);
 }
